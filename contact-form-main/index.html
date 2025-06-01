@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      name="myForm"
+      onsubmit="return validateForm()"
+      action="/contact-form-main"
+      method="post"
+      id="myForm"
+    >
+      <h1>Contact Us</h1>
+
+      <div class="name">
+        <div class="firstName">
+          <label for="name">First Name *</label>
+          <input name="user_firstName" id="firstName" type="text" required />
+        </div>
+        <div class="lastName">
+          <label for="name">Last Name *</label>
+          <input name="user_lastName" id="lastName" type="text" required />
+        </div>
+      </div>
+
+      <div class="email">
+        <div class="flex-email">
+          <label for="email">Email *</label>
+          <input name="user_email" id="email" type="email" required />
+        </div>
+      </div>
+
+      <div class="select" id="select">
+        <div class="radioGeneral">
+          <input
+            name="user_radio"
+            id="general"
+            type="radio"
+            value="General Enquiry"
+          />
+          <label for="radioGeneral">General Enquiry</label>
+        </div>
+        <div class="radioSupport">
+          <input
+            name="user_radio"
+            id="support"
+            type="radio"
+            value="Support Request"
+          />
+          <label for="radioSupport">Support Request</label>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="flex-message">
+          <label for="message"> Message *</label>
+          <textarea
+            name="user_message"
+            id="message"
+            class="size-textArea"
+            required
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="check">
+        <div class="flex-check">
+          <input name="user_check" id="check" type="checkbox" />
+          <p>I consert to being contacted by the team *</p>
+        </div>
+      </div>
+
+      <div class="submitButton">
+        <button type="submit">Submit</button>
+      </div>
+
+      Message Sent! Thanks for completing the form. We'll be in touch soon!
+    </form>
+    <div id="result"></div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">RibahDev</a>.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
