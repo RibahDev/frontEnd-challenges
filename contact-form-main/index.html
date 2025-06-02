@@ -33,50 +33,53 @@
       method="post"
       id="myForm"
     >
-      <h1>Contact Us</h1>
+      <div class="title"><h1>Contact Us</h1></div>
 
       <div class="name">
         <div class="firstName">
-          <label for="name">First Name *</label>
+          <label for="name">First Name <span>*</span></label>
           <input name="user_firstName" id="firstName" type="text" required />
         </div>
         <div class="lastName">
-          <label for="name">Last Name *</label>
+          <label for="name">Last Name <span>*</span></label>
           <input name="user_lastName" id="lastName" type="text" required />
         </div>
       </div>
 
       <div class="email">
         <div class="flex-email">
-          <label for="email">Email *</label>
+          <label for="email">Email <span>*</span></label>
           <input name="user_email" id="email" type="email" required />
         </div>
       </div>
 
       <div class="select" id="select">
-        <div class="radioGeneral">
-          <input
-            name="user_radio"
-            id="general"
-            type="radio"
-            value="General Enquiry"
-          />
-          <label for="radioGeneral">General Enquiry</label>
-        </div>
-        <div class="radioSupport">
-          <input
-            name="user_radio"
-            id="support"
-            type="radio"
-            value="Support Request"
-          />
-          <label for="radioSupport">Support Request</label>
+        <label for="radio">Query Type <span>*</span></label>
+        <div class="select-flex">
+          <div class="radioGeneral">
+            <input
+              name="user_radio"
+              id="general"
+              type="radio"
+              value="General Enquiry"
+            />
+            <label for="radioGeneral">General Enquiry</label>
+          </div>
+          <div class="radioSupport">
+            <input
+              name="user_radio"
+              id="support"
+              type="radio"
+              value="Support Request"
+            />
+            <label for="radioSupport">Support Request</label>
+          </div>
         </div>
       </div>
 
       <div class="message">
         <div class="flex-message">
-          <label for="message"> Message *</label>
+          <label for="message"> Message <span>*</span></label>
           <textarea
             name="user_message"
             id="message"
@@ -89,7 +92,7 @@
       <div class="check">
         <div class="flex-check">
           <input name="user_check" id="check" type="checkbox" />
-          <p>I consert to being contacted by the team *</p>
+          <p>I consert to being contacted by the team <span>*</span></p>
         </div>
       </div>
 

@@ -19,25 +19,24 @@ submitForm.addEventListener("submit", (e) => {
   console.log(userEmail);
   console.log(select_value);
   console.log(userMessage);
-  // handle submit
-});
-alert(
-  `Dados enviados:\n
+  alert(
+    `Dados enviados:\n
     Nome: ${userFirstName} ${userLastName}\n
     Email: ${userEmail}\n
-    Opção: ${selectValue}\n
+    Opção: ${select_value}\n
     Mensagem: ${userMessage}\n
-    Aceitou ser contatado: ${userCheck ? "Sim" : "Não"}`
-);
+    `
+  );
 
-const result = document.getElementById("result");
-result.innerHTML = `
+  const result = document.getElementById("result");
+  result.innerHTML = `
   <h2>Dados Enviados:</h2>
   <p><strong>Nome:</strong> ${userFirstName} ${userLastName}</p>
   <p><strong>Email:</strong> ${userEmail}</p>
-  <p><strong>Opção Selecionada:</strong> ${selectValue}</p>
+  <p><strong>Opção Selecionada:</strong> ${select_value}</p>
   <p><strong>Mensagem:</strong> ${userMessage}</p>
-  <p><strong>Aceitou ser contatado:</strong> ${userCheck ? "Sim" : "Não"}</p>
 `;
+  // handle submit
+});
 
 console.log(submitForm);
